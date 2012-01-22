@@ -302,6 +302,16 @@ h1#site-name {
 	
 	}
 
+h1.title {
+	border: 0;
+	clear: left;
+	font-family: "Myriad Pro", "Myriad Web Pro Regular", "Lucida Grande", Geneva, Trebuchet MS, sans-serif;
+	font-size: 240%;
+	font-weight: bold;
+	line-height: 180%;
+	margin-bottom: 5px;
+	}
+
 
 /* tags */
 .group-tags {
@@ -333,6 +343,62 @@ body#pid-organizations #content-inner .views-row .views-field-title {
 	font-weight: bold;
 	margin-bottom: 8px;
 	}
+
+
+/*//	=MODULES */
+
+/* quicktabs */
+
+/* need some resets first */
+.content-inner-inner .content-content .inner .content ul {
+	margin: 0;
+	}
+.content-inner-inner .content-content .inner .content ul li {
+	background: none;
+	margin: 0;
+	padding: 0;
+	}
+
+.quicktabs_main {
+  background-color:#fff;
+  border:1px solid #aaa;
+  border-top:none;
+  padding:10px;
+  clear:both;
+  overflow: hidden;
+}
+ul.quicktabs_tabs {
+  border-bottom:1px solid #aaa;
+  padding:0 5px 0 0;
+  font-weight:bold;
+  height:19px;
+  margin:0;
+}
+ul.quicktabs_tabs a {
+	padding: 8px 12px;
+	font-size: 16px;
+	font-weight: bold;
+  text-decoration:none;
+  color:#aaa;
+}
+ul.quicktabs_tabs a:hover {
+  color:#555 !important;
+}
+ul.quicktabs_tabs li {
+  padding:2px 5px;
+  margin:0 3px 0 0;
+  position:relative;
+	}
+ul.quicktabs_tabs li:hover {
+	}
+ul.quicktabs_tabs li.active {
+  background-color:#fff;
+}
+ul.quicktabs_tabs li.active a {
+  color:#027AC6;
+}
+
+
 
 
 /*//	=FOOTER */
