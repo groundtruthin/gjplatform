@@ -25,6 +25,13 @@ regions[postscript_bottom] = postscript bottom
 regions[footer] = footer
 regions[node_top] = node top
 regions[node_bottom] = node bottom
+regions[left_upper] = left upper
+regions[right_upper] = right upper
+regions[left_lower] = left lower
+regions[right_lower] = right lower
+regions[full_width] = full width
+regions[left_column] = left column
+regions[right_column] = right column
 
 ; Homepage
 layouts[homepage][name] = "Homepage"
@@ -32,7 +39,7 @@ layouts[homepage][description] = "Homepage layout"
 layouts[homepage][template] = "Homepage"
 layouts[homepage][regions][] = "left_upper"
 layouts[homepage][regions][] = "right_upper"
-layouts[homepage][regions][] = "map"
+layouts[homepage][regions][] = "full_width"
 layouts[homepage][regions][] = "left_lower"
 layouts[homepage][regions][] = "right_lower"
 
