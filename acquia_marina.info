@@ -26,27 +26,37 @@ regions[footer] = footer
 regions[node_top] = node top
 regions[node_bottom] = node bottom
 
+; Homepage
+layouts[onecol][name] = "Homepage"
+layouts[onecol][description] = "Homepage layout"
+layouts[onecol][template] = "Homepage"
+layouts[onecol][regions][] = "left_upper"
+layouts[onecol][regions][] = "right_upper"
+layouts[onecol][regions][] = "map"
+layouts[onecol][regions][] = "left_lower"
+layouts[onecol][regions][] = "right_lower"
+
+; Community
+layouts[onecol][name] = "Community"
+layouts[onecol][description] = "Community profile template"
+layouts[onecol][template] = "community"
+layouts[onecol][regions][] = "full_width"
+layouts[onecol][regions][] = "left_column"
+layouts[onecol][regions][] = "right_column"
+
+; Showcase
+layouts[onecol][name] = "Showcase"
+layouts[onecol][description] = "Full width content at the top with two equal columns below"
+layouts[onecol][template] = "showcase"
+layouts[onecol][regions][] = "content"
+layouts[onecol][regions][] = "left_column"
+layouts[onecol][regions][] = "right_column"
+
 ; One Column
 layouts[onecol][name] = "One Column"
-layouts[onecol][description] = "Full Column One Width"
-layouts[onecol][template] = "one-col"
+layouts[onecol][description] = "Full Column, Full Width"
+layouts[onecol][template] = "homepage"
 layouts[onecol][regions][] = "content"
-
-; Two Columns
-layouts[twocol][name] = "Two Columns"
-layouts[twocol][description] = "Two Columns Equal Width"
-layouts[twocol][template] = "two-col"
-layouts[twocol][regions][] = "content"
-layouts[twocol][regions][] = "sidebar_first"
-layouts[twocol][regions][] = "sidebar_last"
-
-; Three Columns
-layouts[threecol][name] = "Three Columns"
-layouts[threecol][description] = "Three Columns Equal Width"
-layouts[threecol][template] = "three-col"
-layouts[threecol][regions][] = "sidebar_first"
-layouts[threecol][regions][] = "content"
-layouts[threecol][regions][] = "sidebar_last"
 
 
 features[] = logo
