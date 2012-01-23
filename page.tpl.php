@@ -87,7 +87,6 @@
 			<div id="preface-top-wrapper" class="preface-top-wrapper full-width">
 				<div id="preface-top" class="" style="margin:0 auto;width:960px;">
 					<div id="preface-top-inner" class="preface-top-inner inner clearfix">
-						<span class="nav-bg-left"></span>
 						<?php print theme('grid_block', $primary_links_tree, 'primary-menu'); ?>
 					</div><!-- /preface-top-inner -->
 				</div><!-- /preface-top -->
