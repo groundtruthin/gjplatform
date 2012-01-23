@@ -37,6 +37,7 @@ layouts[twocol][name] = "Two Columns"
 layouts[twocol][description] = "Two Columns Equal Width"
 layouts[twocol][template] = "two-col"
 layouts[twocol][regions][] = "content"
+layouts[twocol][regions][] = "sidebar_first"
 layouts[twocol][regions][] = "sidebar_last"
 
 ; Three Columns
