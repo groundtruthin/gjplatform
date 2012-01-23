@@ -27,9 +27,9 @@ regions[node_top] = node top
 regions[node_bottom] = node bottom
 regions[left_upper] = left upper
 regions[right_upper] = right upper
+regions[full_width] = full width
 regions[left_lower] = left lower
 regions[right_lower] = right lower
-regions[full_width] = full width
 regions[left_column] = left column
 regions[right_column] = right column
 
@@ -53,7 +53,7 @@ layouts[community][regions][] = "right_column"
 
 ; Showcase
 layouts[showcase][name] = "Showcase"
-layouts[onecol][description] = "Full width content at the top with two equal columns below"
+layouts[showcase][description] = "Full width content at the top with two equal columns below"
 layouts[showcase][template] = "showcase"
 layouts[showcase][regions][] = "full_width"
 layouts[showcase][regions][] = "left_column"
