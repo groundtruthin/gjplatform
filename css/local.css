@@ -56,7 +56,7 @@ a:active {
 	display: none; /* fix for context */
 	}
 #header-top-wrapper {
-	background: #24211E;
+	background: #373c30;
 	border-bottom: 1px solid #000;
 	padding-top: 0;
 	height: 32px;
@@ -67,6 +67,10 @@ a:active {
 	color: #b3b3b3;
 	height: 32px;
 	}
+#header-top-inner.inner,
+#header-top-inner .inner {
+	background: transparent !important;
+}
 #header-top-inner p {
 	font-size: 1em;
 	margin: 4px 0;
@@ -118,8 +122,6 @@ a:active {
 	margin-top: 20px;
 	}
 #header-group-inner {
-	border: 8px solid rgba(055, 060, 048, .7);
-	border-bottom: 0;
 	}
 #header-group-inner-inner {
 	padding: 5px 0;
