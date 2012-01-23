@@ -27,30 +27,30 @@ regions[node_top] = node top
 regions[node_bottom] = node bottom
 
 ; Homepage
-layouts[onecol][name] = "Homepage"
-layouts[onecol][description] = "Homepage layout"
-layouts[onecol][template] = "Homepage"
-layouts[onecol][regions][] = "left_upper"
-layouts[onecol][regions][] = "right_upper"
-layouts[onecol][regions][] = "map"
-layouts[onecol][regions][] = "left_lower"
-layouts[onecol][regions][] = "right_lower"
+layouts[homepage][name] = "Homepage"
+layouts[homepage][description] = "Homepage layout"
+layouts[homepage][template] = "Homepage"
+layouts[homepage][regions][] = "left_upper"
+layouts[homepage][regions][] = "right_upper"
+layouts[homepage][regions][] = "map"
+layouts[homepage][regions][] = "left_lower"
+layouts[homepage][regions][] = "right_lower"
 
 ; Community
-layouts[onecol][name] = "Community"
-layouts[onecol][description] = "Community profile template"
-layouts[onecol][template] = "community"
-layouts[onecol][regions][] = "full_width"
-layouts[onecol][regions][] = "left_column"
-layouts[onecol][regions][] = "right_column"
+layouts[community][name] = "Community"
+layouts[community][description] = "Community profile template"
+layouts[community][template] = "community"
+layouts[community][regions][] = "full_width"
+layouts[community][regions][] = "left_column"
+layouts[community][regions][] = "right_column"
 
 ; Showcase
-layouts[onecol][name] = "Showcase"
+layouts[showcase][name] = "Showcase"
 layouts[onecol][description] = "Full width content at the top with two equal columns below"
-layouts[onecol][template] = "showcase"
-layouts[onecol][regions][] = "content"
-layouts[onecol][regions][] = "left_column"
-layouts[onecol][regions][] = "right_column"
+layouts[showcase][template] = "showcase"
+layouts[showcase][regions][] = "full_width"
+layouts[showcase][regions][] = "left_column"
+layouts[showcase][regions][] = "right_column"
 
 ; One Column
 layouts[onecol][name] = "One Column"
