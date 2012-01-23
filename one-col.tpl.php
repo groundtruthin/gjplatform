@@ -1,4 +1,4 @@
-<?php
+x<?php
 // $Id: page.tpl.php 7156 2010-04-24 16:48:35Z chris $
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" xml:lang="<?php print $language->language; ?>">
@@ -85,7 +85,6 @@
 			<div id="preface-top-wrapper" class="preface-top-wrapper full-width">
 				<div id="preface-top" class="" style="margin:0 auto;width:960px;">
 					<div id="preface-top-inner" class="preface-top-inner inner clearfix">
-						<span class="nav-bg-left"></span>
 						<?php print theme('grid_block', $primary_links_tree, 'primary-menu'); ?>
 					</div><!-- /preface-top-inner -->
 				</div><!-- /preface-top -->
