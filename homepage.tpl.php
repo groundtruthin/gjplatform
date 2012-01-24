@@ -139,10 +139,10 @@
 												<?php print theme('grid_row', $content_bottom, 'content-bottom', 'nested'); ?>
 
 												<!-- left lower column -->
-												<?php print theme('grid_row', $left_lower, 'left_lower', 'nested', 'grid16-10'); ?>
+												<?php print theme('grid_row', $left_lower, 'left_lower', 'nested', 'grid16-8'); ?>
 
 												<!-- right lower column -->
-												<?php print theme('grid_row', $right_lower, 'right_lower', 'nested', 'grid16-6'); ?>
+												<?php print theme('grid_row', $right_lower, 'right_lower', 'nested', 'grid16-8'); ?>
 
 											</div><!-- /content-group-inner -->
 										</div><!-- /content-group -->
