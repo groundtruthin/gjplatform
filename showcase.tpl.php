@@ -98,8 +98,6 @@
 					<!-- main group: width = grid_width - sidebar_first_width -->
 					<div id="main-group" class="main-group row nested <?php print $main_group_width; ?>">
 						<div id="main-group-inner" class="main-group-inner inner clearfix">
-							<?php print theme('grid_row', $preface_bottom, 'preface-bottom', 'nested'); ?>
-
 							<div id="main-content" class="main-content row nested">
 								<div id="main-content-inner" class="main-content-inner inner clearfix">
 									<!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) -->
@@ -129,6 +127,7 @@
 																<?php if ($content): ?>
 																<div id="content-content" class="content-content">
 																	<?php print $content; ?>
+																	<?php print $full_width; ?>
 																	<?php print $feed_icons; ?>
 																</div><!-- /content-content -->
 																<?php endif; ?>
@@ -143,15 +142,17 @@
 									</div><!-- /main-content-inner -->
 								</div><!-- /main-content -->
 
-								<?php print theme('grid_row', $postscript_top, 'postscript-top', 'nested'); ?>
+								<!-- left column -->
+								<?php print theme('grid_row', $left_column, 'left_column', 'nested', 'grid16-8'); ?>
+								
+								<!-- right column -->
+								<?php print theme('grid_row', $right_column, 'right_column', 'nested', 'grid16-8'); ?>
+
 							</div><!-- /main-group-inner -->
 						</div><!-- /main-group -->
 					</div><!-- /main-inner -->
 				</div><!-- /main -->
 			</div><!-- /main-wrapper -->
-
-			<!-- postscript-bottom row: width = grid_width -->
-			<?php print theme('grid_row', $postscript_bottom, 'postscript-bottom', 'full-width', $grid_width); ?>
 
 			<!-- footer row: width = grid_width -->
 			<?php print theme('grid_row', $footer, 'footer', 'full-width', $grid_width); ?>

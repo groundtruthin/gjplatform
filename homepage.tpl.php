@@ -117,27 +117,33 @@
 												</div><!-- /content-top -->
 												<?php endif; ?>
 
+												<!-- left upper column -->
+												<?php print theme('grid_row', $left_upper, 'left_upper', 'nested', 'grid16-10'); ?>
+
+												<!-- right upper column -->
+												<?php print theme('grid_row', $right_upper, 'right_upper', 'nested', 'grid16-6'); ?>
+
 												<div id="content-region" class="content-region row nested">
 													<div id="content-region-inner" class="content-region-inner inner clearfix">
 														<a name="main-content-area" id="main-content-area"></a>
 														<?php print theme('grid_block', $tabs, 'content-tabs'); ?>
 														<div id="content-inner" class="content-inner block">
 															<div id="content-inner-inner" class="content-inner-inner inner clearfix">
-																<?php if ($title): ?>
-																<h1 class="title"><?php print $title; ?></h1>
-																<?php endif; ?>
-																<?php if ($content): ?>
-																<div id="content-content" class="content-content">
-																	<?php print $content; ?>
-																	<?php print $feed_icons; ?>
+																<?php print $full_width; ?>
 																</div><!-- /content-content -->
-																<?php endif; ?>
 															</div><!-- /content-inner-inner -->
 														</div><!-- /content-inner -->
 													</div><!-- /content-region-inner -->
 												</div><!-- /content-region -->
 
 												<?php print theme('grid_row', $content_bottom, 'content-bottom', 'nested'); ?>
+
+												<!-- left lower column -->
+												<?php print theme('grid_row', $left_lower, 'left_lower', 'nested', 'grid16-10'); ?>
+
+												<!-- right lower column -->
+												<?php print theme('grid_row', $right_lower, 'right_lower', 'nested', 'grid16-6'); ?>
+
 											</div><!-- /content-group-inner -->
 										</div><!-- /content-group -->
 									</div><!-- /main-content-inner -->
