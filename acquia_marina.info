@@ -36,7 +36,7 @@ regions[right_column] = right column
 ; Homepage
 layouts[homepage][name] = "Homepage"
 layouts[homepage][description] = "Homepage layout"
-layouts[homepage][template] = "Homepage"
+layouts[homepage][template] = "homepage"
 layouts[homepage][regions][] = "left_upper"
 layouts[homepage][regions][] = "right_upper"
 layouts[homepage][regions][] = "full_width"
@@ -62,7 +62,7 @@ layouts[showcase][regions][] = "right_column"
 ; One Column
 layouts[onecol][name] = "One Column"
 layouts[onecol][description] = "Full Column, Full Width"
-layouts[onecol][template] = "homepage"
+layouts[onecol][template] = "one-col"
 layouts[onecol][regions][] = "content"
 
 
