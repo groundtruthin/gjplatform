@@ -30,18 +30,6 @@
 				<a href="#main-content-area"><?php print t('Skip to Main Content Area'); ?></a>
 			</div>
 
-			<!-- header-top row: width = grid_width -->
-			<div id="header-top-wrapper" class="header-top-wrapper">
-				<div id="header-top" class="header-top row grid16-16">
-					<div id="header-top-inner" class="inner clearfix">
-						<?php if ($site_slogan): ?>
-						<p id="slogan"><a href="/"><?php print $site_name; ?>: <?php print $site_slogan; ?></a></p>
-						<?php endif; ?>
-						<?php print theme('grid_row', $header_top, 'header-top', 'grid16-8', $grid_width); ?>
-					</div>
-				</div>
-			</div>
-
 			<!-- header-group row: width = grid_width -->
 			<div id="header-group-wrapper" class="header-group-wrapper">
 				<div id="header-group" class="header-group row <?php print $grid_width; ?>">
@@ -65,6 +53,9 @@
 									<div id="site-name-wrapper" class="clearfix">
 										<?php if ($site_name): ?>
 										<h1 id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>
+										<?php endif; ?>
+										<?php if ($site_slogan): ?>
+										<p id="slogan"><a href="/"><?php print $site_name; ?>: <?php print $site_slogan; ?></a></p>
 										<?php endif; ?>
 									</div><!-- /site-name-wrapper -->
 									<?php endif; ?>

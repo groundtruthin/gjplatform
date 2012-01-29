@@ -13,7 +13,6 @@ scripts[] = js/acquia-marina-script.js
 
 regions[sidebar_first] = sidebar first
 regions[sidebar_last] = sidebar last
-regions[header_top] = header top
 regions[header] = header
 regions[preface_top] = preface top
 regions[preface_bottom] = preface bottom

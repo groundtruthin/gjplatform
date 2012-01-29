@@ -34,9 +34,7 @@
 			<div id="header-top-wrapper" class="header-top-wrapper">
 				<div id="header-top" class="header-top row grid16-16">
 					<div id="header-top-inner" class="inner clearfix">
-						<?php if ($site_slogan): ?>
-						<p id="slogan"><a href="/"><?php print $site_name; ?>: <?php print $site_slogan; ?></a></p>
-						<?php endif; ?>
+						
 						<?php print theme('grid_row', $header_top, 'header-top', 'grid16-8', $grid_width); ?>
 					</div>
 				</div>
@@ -65,6 +63,9 @@
 									<div id="site-name-wrapper" class="clearfix">
 										<?php if ($site_name): ?>
 										<h1 id="site-name"><a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>
+										<?php endif; ?>
+										<?php if ($site_slogan): ?>
+										<p id="slogan"><a href="/"><?php print $site_name; ?>: <?php print $site_slogan; ?></a></p>
 										<?php endif; ?>
 									</div><!-- /site-name-wrapper -->
 									<?php endif; ?>
@@ -104,6 +105,7 @@
 										<div id="content-group" class="content-group row nested <?php print $content_group_width; ?>">
 											<div id="content-group-inner" class="content-group-inner inner clearfix">
 												<?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>
+												<?php print theme('grid_block', $tabs, 'content-tabs'); ?>
 
 												<?php if ($content_top || $help || $messages): ?>
 												<div id="content-top" class="content-top row nested">
@@ -118,7 +120,6 @@
 												<div id="content-region" class="content-region row nested">
 													<div id="content-region-inner" class="content-region-inner inner clearfix">
 														<a name="main-content-area" id="main-content-area"></a>
-														<?php print theme('grid_block', $tabs, 'content-tabs'); ?>
 														<div id="content-inner" class="content-inner block">
 															<div id="content-inner-inner" class="content-inner-inner inner clearfix">
 																<?php if ($title): ?>
