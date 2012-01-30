@@ -138,10 +138,10 @@ h1#site-name {
 	background: none;
 	color: #222;
 	font-size: 16px;
-	padding: 11px 15px 9px 15px;
+	padding: 12px 15px 9px 15px;
 	text-shadow: 1px 1px 1px #a8dc68;
 	background: #82c332;
-	margin: 0 3px;
+	margin: 0;
 	}
 #primary-menu ul.menu li.last a {
 	margin-right: 0;
@@ -150,7 +150,7 @@ h1#site-name {
 #primary-menu ul.menu li.hover a,
 #primary-menu ul.menu li.sfHover a {
 	background: #679c25 !important;
-	text-shadow: 1px 1px 1px #a8dc68;
+	text-shadow: 1px 1px 1px #444;
 	}
 /* Second level */
 #primary-menu ul.menu li:hover ul.menu,
@@ -167,6 +167,7 @@ h1#site-name {
 	font-weight: normal;
 	color: #fff;
 	border: 0;
+	background: none;
 	}
 #primary-menu ul.menu li:hover ul.menu li,
 #primary-menu ul.menu li.hover ul.menu li,
@@ -191,8 +192,8 @@ h1#site-name {
 	}
 #primary-menu ul.menu li ul.menu li a:hover {
 	color: #fff;
-	text-shadow: ;
-	background-color: #8b1001;
+	text-shadow: none;
+	background-color: #4b711b;
 	}
 
 #primary-menu ul.menu li ul.menu li a.active {
@@ -270,8 +271,8 @@ h1#site-name {
 
 /* editor tabs */
 #content-tabs {
-	margin: 0;
-}
+	margin: 10px 0;
+	}
 
 h1.title {
 	border: 0;
