@@ -44,84 +44,14 @@ a:active {
 	color: #92B641;
 	}
 
-/* top links */
-#header-top .block {
-	float: left;
-	}
-#header-top-top {
-	float: right;
-	width: 680px;
-	}
-#header-top-inner a#context-block-region-header_top {
-	display: none; /* fix for context */
-	}
-#header-top-wrapper {
-	background: #373c30;
-	border-bottom: 1px solid #000;
-	padding-top: 0;
-	height: 32px;
-	}
-#header-top-group {
-	}
-#header-top-inner {
-	color: #b3b3b3;
-	height: 32px;
-	}
-#header-top-inner.inner,
-#header-top-inner .inner {
-	background: transparent !important;
-}
-#header-top-inner p {
-	font-size: 1em;
-	margin: 4px 0;
-	font-family: Times, serif;
-	font-style: italic;
-	}
-#header-top-inner a,
-#header-top-inner a:link,
-#header-top-inner a:active {
-	display: block;
-	float: left;
-	color: #b3b3b3;
-	padding: 3px 8px;
-	text-decoration: none;
-	}
-#header-top-inner a:hover {
-	color: #fff;
-	background-color: #000;
-	border-radius: 6px;
-	}
-/* blocks */
-#header-top-inner .block {
-	width: 270px;
-	}
-#header-top-top-inner .block {
-	float: right;
-	width: 310px;
-	margin: 0;
-	}
-#header-top-inner h2.title {
-	font-weight: normal;
-	font-style: normal;
-	float: left;
-	font-size: 100%;
-	margin: 0 10px 0 0;
-	padding: 4px 0;
-	}
-#header-top-inner ul li {
-	list-style-type: none;
-	display: inline;
-	}
-#header-top-inner .block-locale {
-	margin-top: 4px;
-	}
-
 /* header */
 #header-group-wrapper {
 	background: none;
 	margin-top: 20px;
 	}
 #header-group-inner {
+	position: relative;
+	padding-left: 230px;
 	}
 #header-group-inner-inner {
 	padding: 5px 0;
@@ -134,6 +64,16 @@ h1#site-name {
 	text-indent: -999em;
 	}
 
+/* logo */
+#logo {
+	position: absolute;
+	z-index: 1000;
+	top: -20px;
+	left: 10px;
+	background-color: #ccc;
+	width: 200px;
+	height: 200px;
+	}
 
 /* nav */
 #preface-top-wrapper {
@@ -157,6 +97,10 @@ h1#site-name {
 	left: -10px;
 	}
 #primary-menu {
+	background-color: #82c332;
+	}
+#primary-menu-inner {
+	background-color: #82c332;
 	}
 #primary-menu.block {
 	float: left;
@@ -184,18 +128,20 @@ h1#site-name {
 	display: block;
 	background: none;
 	color: #222;
-	font-size: 18px;
+	font-size: 16px;
 	padding: 11px 15px 9px 15px;
 	text-shadow: 1px 1px 1px #a8dc68;
 	background: #82c332;
-	border-radius: 6px;
-	margin: 0 7px;
+	margin: 0 3px;
+	}
+#primary-menu ul.menu li.last a {
+	margin-right: 0;
 	}
 #primary-menu ul.menu li:hover a,
 #primary-menu ul.menu li.hover a,
 #primary-menu ul.menu li.sfHover a {
 	background: #679c25 !important;
-
+	text-shadow: 1px 1px 1px #a8dc68;
 	}
 /* Second level */
 #primary-menu ul.menu li:hover ul.menu,
@@ -220,7 +166,6 @@ h1#site-name {
 	border-bottom: 0;
 	text-shadow: 1px 1px 1px #436816;
 	padding-left: 0;
-	border-radius: none;
 	}
 #primary-menu ul.menu li:hover ul.menu li.last,
 #primary-menu ul.menu li.hover ul.menu li.last,
