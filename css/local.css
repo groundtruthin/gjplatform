@@ -29,9 +29,11 @@ iframe html {
 
 
 /* structure */
-.inner {
+#main-content .block-views {
 	background: #fff;
-}
+	border: 1px solid #b0ab9e;
+/*	box-shadow: 2px 2px 2px #978e79;
+*/	}
 
 /* global */
 fieldset {
@@ -46,8 +48,7 @@ a:active {
 
 /* header */
 #header-group-wrapper {
-	background: none;
-	margin-top: 20px;
+	background: #fff;
 	}
 #header-group-inner {
 	position: relative;
@@ -68,16 +69,23 @@ h1#site-name {
 #logo {
 	position: absolute;
 	z-index: 1000;
-	top: -20px;
-	left: 10px;
-	background-color: #ccc;
+	top: 0;
+	left: 0;
+	background-color: #373c30;
 	width: 200px;
-	height: 200px;
+	height: 170px;
+	margin: 0;
+	float: none;
+	}
+#logo a {
+	display: block;
+	text-align: center;
+	padding: 40px;
 	}
 
 /* nav */
 #preface-top-wrapper {
-	background: none;
+	background: #82c332;
 	padding-top: 0;
 	z-index: 100;
 	}
@@ -106,7 +114,8 @@ h1#site-name {
 	float: left;
 	}
 #primary-menu.block .inner {
-	float: right;
+	float: left;
+	margin-left: 225px;
 	}
 #primary-menu ul.menu {
 	border: 0;
@@ -245,7 +254,10 @@ h1#site-name {
 	padding-top: 0;
 	}
 #main {
-	background: #F9F7F2;
+	background: none;
+	}
+#main-inner {
+	padding-top: 20px;
 	}
 
 

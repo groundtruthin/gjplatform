@@ -39,15 +39,15 @@
 							<a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
 						</div>
 						<?php endif; ?>
-
 						<?php if ($search_box || $secondary_links): ?>
 						<div id="header-group-inner-top" class="clearfix">
+							<?php print theme('grid_block', $search_box, 'search-box'); ?>
 							<?php print theme('grid_row', theme('links', $secondary_links), 'secondary-menu'); ?>
 						</div>
 						<?php endif; ?>
-						<?php if ($logo || $site_name || $site_slogan || $header): ?>
+						<?php if ($site_name || $site_slogan || $header): ?>
 						<div id="header-group-inner-inner" class="clearfix">
-							<?php if ($logo || $site_name || $site_slogan): ?>
+							<?php if ($site_name || $site_slogan): ?>
 							<div id="header-site-info" class="header-site-info block">
 								<div id="header-site-info-inner" class="header-site-info-inner inner">
 									<?php if ($site_name || $site_slogan): ?>
