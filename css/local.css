@@ -310,20 +310,24 @@ h1.title {
 	}
 
 /* PAGE: ORGANIZATIONS */
-body#pid-organizations #content-inner .views-row {
+body#pid-organizations #content-inner .views-row,
+body#pid-communities #content-inner .views-row {
 	float: left;
 	width: 270px;
 	}
-body#pid-organizations #content-inner .views-row-odd {
+body#pid-organizations #content-inner .views-row-odd,
+body#pid-communities #content-inner .views-row-odd {
 	margin-right: 10px;
 	border-right: 1px solid #CCC;
 	padding-right: 10px;
 	}
-body#pid-organizations #content-inner .views-row-even {
+body#pid-organizations #content-inner .views-row-even,
+body#pid-communities #content-inner .views-row-even {
 	margin: 0 10px;
 	border-right: 1px solid #CCC;
 	}
-body#pid-organizations #content-inner .views-row .views-field-title {
+body#pid-organizations #content-inner .views-row .views-field-title,
+body#pid-communities #content-inner .views-row .views-field-title {
 	font-size: 130%;
 	font-weight: bold;
 	margin-bottom: 8px;
