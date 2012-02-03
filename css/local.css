@@ -17,7 +17,7 @@
 
 html {
 	height: 100%;
-	background: #312D28 url(../images/bg.jpg) repeat 0 0;
+	background: #312D28 url(../images/bg2.jpg) repeat 0 0;
 	}
 body {
 	color: #333;
@@ -31,9 +31,10 @@ iframe html {
 /* structure */
 #main-content .block-views {
 	background: #fff;
+	width: 98%;
 	border: 1px solid #b0ab9e;
-/*	box-shadow: 2px 2px 2px #978e79;
-*/	}
+	box-shadow: 3px 3px 1px #b0ab9e;
+	}
 
 /* global */
 fieldset {
@@ -64,6 +65,10 @@ h1#site-name {
 	background: url(../images/title.gif) no-repeat 0 0;
 	text-indent: -999em;
 	}
+h1#site-name a {
+	display: block;
+	height: 60px;
+}
 
 /* logo */
 #logo {
