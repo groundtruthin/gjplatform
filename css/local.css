@@ -29,7 +29,8 @@ iframe html {
 
 
 /* structure */
-#main-content .block-views {
+#main-content .block-views,
+#main-content .quicktabs_main {
 	background: #fff;
 	margin-right: 5px;
 	border: 1px solid #b0ab9e;
@@ -39,8 +40,18 @@ iframe html {
 /* grid adjustments for blocks */
 .grid16-6 .block-views { width: 355px; }
 .grid16-8 .block-views { width: 475px; }
-.grid16-10 .block-views { width: 585px; }
-.content-region .block-views { width: 955px; }
+.grid16-10 .block { width: 585px; }
+/*.content-region .block-views { width: 955px; }
+*/
+/* q
+
+/* block adjustments for quicktabs */
+#main-content .quicktabs_main .block-views {
+	border: 0;
+	margin: 0;
+	box-shadow: none;
+	width: auto;
+}
 
 /* global */
 fieldset {
@@ -393,6 +404,10 @@ h2.block-title {
 
 
 /* PAGE: Organizations */
+body#pid-organizations #main-content .block-views {
+	background: none;
+	border: 0;
+}
 .field-field-logo {
 	float: left;
 	margin-right: 20px;
@@ -447,16 +462,15 @@ body#pid-communities #content-inner .views-row .views-field-title {
 	padding: 0;
 	}
 
+.quicktabs_wrapper {
+	padding-bottom: 5px;
+}
 .quicktabs_main {
-	background-color:#fff;
-	border:1px solid #aaa;
-	border-top:none;
 	padding:10px;
-	clear:both;
+	clear: both;
 	overflow: hidden;
 }
 ul.quicktabs_tabs {
-	border-bottom:1px solid #aaa;
 	padding:0 5px 0 0;
 	font-weight:bold;
 	height: 26px;
