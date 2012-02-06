@@ -64,6 +64,13 @@ layouts[onecol][description] = "Full Column, Full Width"
 layouts[onecol][template] = "one-col"
 layouts[onecol][regions][] = "content"
 
+; Content With Sidebar
+layouts[sidebar][name] = "Content with Sidebar Area"
+layouts[sidebar][description] = "Standard content page with sidebar area"
+layouts[sidebar][template] = "sidebar"
+layouts[sidebar][regions][] = "content"
+layouts[sidebar][regions][] = "sidebar_last"
+
 
 features[] = logo
 features[] = name
