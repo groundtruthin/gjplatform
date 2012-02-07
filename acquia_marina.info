@@ -8,7 +8,7 @@ engine = phptemplate
 
 stylesheets[all][] = css/fusion-acquia-marina-style.css
 
-scripts[] = js/jquery.corner.js
+scripts[] = js/jquery.masonry.js
 scripts[] = js/acquia-marina-script.js
 
 regions[sidebar_first] = sidebar first
@@ -106,8 +106,6 @@ skinr[marina-general-styles][features][] = panels_display
 skinr[marina-general-styles][features][] = panels_pane
 skinr[marina-general-styles][features][] = panels_panel
 skinr[marina-general-styles][features][] = views_view
-skinr[marina-general-styles][options][1][label] = Rounded corners
-skinr[marina-general-styles][options][1][class] = marina-rounded-corners
 
 ; Marina list styles
 skinr[marina-list-styles][title] = Acquia Marina - List styles
