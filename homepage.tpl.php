@@ -101,7 +101,6 @@
 										<div id="content-group" class="content-group row nested <?php print $content_group_width; ?>">
 											<div id="content-group-inner" class="content-group-inner inner clearfix">
 												<?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>
-												<?php print theme('grid_block', $tabs, 'content-tabs'); ?>
 
 												<?php if ($content_top || $help || $messages): ?>
 												<div id="content-top" class="content-top row nested">
