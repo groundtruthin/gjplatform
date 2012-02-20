@@ -9,6 +9,7 @@ engine = phptemplate
 stylesheets[all][] = css/fusion-acquia-marina-style.css
 
 scripts[] = js/jquery.masonry.js
+scripts[] = js/jquery.custom.js
 scripts[] = js/acquia-marina-script.js
 
 regions[sidebar_first] = sidebar first
@@ -22,6 +23,9 @@ regions[content_bottom] = content bottom
 regions[postscript_top] = postscript top
 regions[postscript_bottom] = postscript bottom
 regions[footer] = footer
+regions[footer_left] = footer left column
+regions[footer_middle] = footer middle column
+regions[footer_right] = footer right column
 regions[node_top] = node top
 regions[node_bottom] = node bottom
 regions[left_upper] = left upper
@@ -36,11 +40,15 @@ regions[right_column] = right column
 layouts[homepage][name] = "Homepage"
 layouts[homepage][description] = "Homepage layout"
 layouts[homepage][template] = "homepage"
+layouts[homepage][regions][] = "header_top"
 layouts[homepage][regions][] = "left_upper"
 layouts[homepage][regions][] = "right_upper"
 layouts[homepage][regions][] = "full_width"
 layouts[homepage][regions][] = "left_lower"
 layouts[homepage][regions][] = "right_lower"
+layouts[homepage][regions][] = "footer_left"
+layouts[homepage][regions][] = "footer_middle"
+layouts[homepage][regions][] = "footer_right"
 
 ; Community
 layouts[community][name] = "Community"
@@ -49,6 +57,9 @@ layouts[community][template] = "community"
 layouts[community][regions][] = "full_width"
 layouts[community][regions][] = "left_column"
 layouts[community][regions][] = "right_column"
+layouts[community][regions][] = "footer_left"
+layouts[community][regions][] = "footer_middle"
+layouts[community][regions][] = "footer_right"
 
 ; Showcase
 layouts[showcase][name] = "Showcase"
@@ -57,12 +68,18 @@ layouts[showcase][template] = "showcase"
 layouts[showcase][regions][] = "full_width"
 layouts[showcase][regions][] = "left_column"
 layouts[showcase][regions][] = "right_column"
+layouts[showcase][regions][] = "footer_left"
+layouts[showcase][regions][] = "footer_middle"
+layouts[showcase][regions][] = "footer_right"
 
 ; One Column
 layouts[onecol][name] = "One Column"
 layouts[onecol][description] = "Full Column, Full Width"
 layouts[onecol][template] = "one-col"
 layouts[onecol][regions][] = "content"
+layouts[onecol][regions][] = "footer_left"
+layouts[onecol][regions][] = "footer_middle"
+layouts[onecol][regions][] = "footer_right"
 
 ; Content With Sidebar
 layouts[sidebar][name] = "Content with Sidebar Area"
@@ -70,6 +87,9 @@ layouts[sidebar][description] = "Standard content page with sidebar area"
 layouts[sidebar][template] = "sidebar"
 layouts[sidebar][regions][] = "content"
 layouts[sidebar][regions][] = "sidebar_last"
+layouts[sidebar][regions][] = "footer_left"
+layouts[sidebar][regions][] = "footer_middle"
+layouts[sidebar][regions][] = "footer_right"
 
 
 features[] = logo
