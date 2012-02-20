@@ -31,7 +31,7 @@
 			</div>
 
 			<!-- header-top row: width = grid_width -->
-			<?php print theme('grid_row', $header_top, 'header-top', 'full-width', $grid_width); ?>
+			<?php print theme('grid_row', $header_top, 'header-top', 'full-width', 'nested'); ?>
 
 			<!-- header-group row: width = grid_width -->
 			<div id="header-group-wrapper" class="header-group-wrapper">
@@ -40,12 +40,6 @@
 						<?php if ($logo): ?>
 						<div id="logo">
 							<a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-						</div>
-						<?php endif; ?>
-						<?php if ($search_box || $secondary_links): ?>
-						<div id="header-group-inner-top" class="clearfix">
-							<?php print theme('grid_block', $search_box, 'search-box'); ?>
-							<?php print theme('grid_row', theme('links', $secondary_links), 'secondary-menu'); ?>
 						</div>
 						<?php endif; ?>
 						<?php if ($site_name || $site_slogan || $header): ?>
