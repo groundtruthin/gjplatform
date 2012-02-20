@@ -30,6 +30,9 @@
 				<a href="#main-content-area"><?php print t('Skip to Main Content Area'); ?></a>
 			</div>
 
+			<!-- header-top row: width = grid_width -->
+			<?php print theme('grid_row', $header_top, 'header-top', 'full-width', $grid_width); ?>
+
 			<!-- header-group row: width = grid_width -->
 			<div id="header-group-wrapper" class="header-group-wrapper">
 				<div id="header-group" class="header-group row <?php print $grid_width; ?>">
@@ -151,8 +154,16 @@
 			<!-- postscript-bottom row: width = grid_width -->
 			<?php print theme('grid_row', $postscript_bottom, 'postscript-bottom', 'full-width', $grid_width); ?>
 
-			<!-- footer row: width = grid_width -->
-			<?php print theme('grid_row', $footer, 'footer', 'full-width', $grid_width); ?>
+			<!-- footer -->
+			<div id="footer-group-wrapper" class="footer-group-wrapper">
+				<div id="footer-group" class="footer-group row <?php print $grid_width; ?>">
+					<div id="footer-group-inner" class="footer-group-inner inner clearfix">
+						<?php print theme('grid_row', $footer_left, 'footer_left', 'grid16-6', 'nested'); ?>
+						<?php print theme('grid_row', $footer_middle, 'footer_middle', 'grid16-6', 'nested'); ?>
+						<?php print theme('grid_row', $footer_right, 'footer_right', 'grid16-4', 'nested'); ?>
+					</div>
+				</div>
+			</div> <!-- /footer -->
 
 			<!-- footer-message row: width = grid_width -->
 			<div id="footer-message-wrapper" class="footer-message-wrapper full-width">

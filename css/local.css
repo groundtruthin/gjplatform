@@ -30,7 +30,9 @@ iframe html {
 
 /* structure */
 #main-content .block-views,
-#main-content .quicktabs_main {
+#main-content .quicktabs_main,
+body#pid-communities #main_content .views-row,
+body#pid-organizations .views-row {
 	background: #fff;
 	margin-right: 5px;
 	border: 1px solid #b0ab9e;
@@ -39,11 +41,9 @@ iframe html {
 
 /* grid adjustments for blocks */
 .grid16-6 .block-views { width: 355px; }
-.grid16-8 .block-views { width: 475px; }
+.grid16-8 .block-views { width: 465px; }
 .grid16-10 .block { width: 585px; }
-/*.content-region .block-views { width: 955px; }
-*/
-/* q
+.grid16-0 { width: 955px; }
 
 /* block adjustments for quicktabs */
 #main-content .quicktabs_main .block-views {
@@ -61,7 +61,7 @@ fieldset {
 /* links */
 a:link,
 a:active {
-	color: #92B641;
+	color: #496E1C;
 	}
 
 /* header */
@@ -108,7 +108,7 @@ h1#site-name a {
 
 /* nav */
 #preface-top-wrapper {
-	background: #82c332;
+	background: #496E1C;
 	padding-top: 0;
 	z-index: 100;
 	}
@@ -128,10 +128,10 @@ h1#site-name a {
 	left: -10px;
 	}
 #primary-menu {
-	background-color: #82c332;
+	background-color: #496E1C;
 	}
 #primary-menu-inner {
-	background-color: #82c332;
+	background-color: #496E1C;
 	}
 #primary-menu.block {
 	float: left;
@@ -159,11 +159,11 @@ h1#site-name a {
 #primary-menu ul.menu li a:visited {
 	display: block;
 	background: none;
-	color: #222;
+	color: #FFF;
 	font-size: 16px;
 	padding: 12px 15px 9px 15px;
-	text-shadow: 1px 1px 1px #a8dc68;
-	background: #82c332;
+	text-shadow: 1px 1px 1px #222;
+	background: #496E1C;
 	margin: 0;
 	}
 #primary-menu ul.menu li.last a {
@@ -316,7 +316,7 @@ h1.title {
 	}
 
 /* blocks */
-h2.block-title {
+.block-views h2 {
 	margin: 10px 0;
 	font-size: 18px;
 }
@@ -403,11 +403,24 @@ h2.block-title {
 }
 
 
-/* PAGE: Organizations */
+/* PAGE: Organizations & Communities */
+body#pid-communities #main-content .block-views,
 body#pid-organizations #main-content .block-views {
 	background: none;
 	border: 0;
+	box-shadow: none;
 }
+body#pid-organizations #content-inner .views-row,
+body#pid-communities #content-inner .views-row {
+	float: left;
+	width: 310px;
+	}
+body#pid-organizations #content-inner .views-row .views-field-title,
+body#pid-communities #content-inner .views-row .views-field-title {
+	font-size: 130%;
+	font-weight: bold;
+	margin-bottom: 8px;
+	}
 .field-field-logo {
 	float: left;
 	margin-right: 20px;
@@ -417,34 +430,6 @@ body#pid-organizations #main-content .block-views {
 	}
 .content .field {
 	margin-bottom: 4px;
-	}
-
-
-/* BLOCK: MAPS */
-
-
-/* PAGE: ORGANIZATIONS */
-body#pid-organizations #content-inner .views-row,
-body#pid-communities #content-inner .views-row {
-	float: left;
-	width: 270px;
-	}
-body#pid-organizations #content-inner .views-row-odd,
-body#pid-communities #content-inner .views-row-odd {
-	margin-right: 10px;
-	border-right: 1px solid #CCC;
-	padding-right: 10px;
-	}
-body#pid-organizations #content-inner .views-row-even,
-body#pid-communities #content-inner .views-row-even {
-	margin: 0 10px;
-	border-right: 1px solid #CCC;
-	}
-body#pid-organizations #content-inner .views-row .views-field-title,
-body#pid-communities #content-inner .views-row .views-field-title {
-	font-size: 130%;
-	font-weight: bold;
-	margin-bottom: 8px;
 	}
 
 

@@ -147,8 +147,16 @@
 			<!-- postscript-bottom row: width = grid_width -->
 			<?php print theme('grid_row', $postscript_bottom, 'postscript-bottom', 'full-width', $grid_width); ?>
 
-			<!-- footer row: width = grid_width -->
-			<?php print theme('grid_row', $footer, 'footer', 'full-width', $grid_width); ?>
+			<!-- footer -->
+			<div id="footer-group-wrapper" class="footer-group-wrapper">
+				<div id="footer-group" class="footer-group row <?php print $grid_width; ?>">
+					<div id="footer-group-inner" class="footer-group-inner inner clearfix">
+						<?php print theme('grid_row', $footer_left, 'footer_left', 'grid16-6', 'nested'); ?>
+						<?php print theme('grid_row', $footer_middle, 'footer_middle', 'grid16-6', 'nested'); ?>
+						<?php print theme('grid_row', $footer_right, 'footer_right', 'grid16-4', 'nested'); ?>
+					</div>
+				</div>
+			</div> <!-- /footer -->
 
 			<!-- footer-message row: width = grid_width -->
 			<div id="footer-message-wrapper" class="footer-message-wrapper full-width">
