@@ -30,9 +30,6 @@
 				<a href="#main-content-area"><?php print t('Skip to Main Content Area'); ?></a>
 			</div>
 
-			<!-- header-top row: width = grid_width -->
-			<?php print theme('grid_row', $header_top, 'header-top', 'full-width', 'nested'); ?>
-
 			<!-- header-group row: width = grid_width -->
 			<div id="header-group-wrapper" class="header-group-wrapper">
 				<div id="header-group" class="header-group row <?php print $grid_width; ?>">
@@ -42,6 +39,9 @@
 							<a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
 						</div>
 						<?php endif; ?>
+
+						<?php print theme('grid_row', $header_top, 'header-top', 'grid16-4', 'nested'); ?>
+
 						<?php if ($site_name || $site_slogan || $header): ?>
 						<div id="header-group-inner-inner" class="clearfix">
 							<?php if ($site_name || $site_slogan): ?>

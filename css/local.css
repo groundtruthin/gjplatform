@@ -41,7 +41,8 @@ body#pid-organizations .views-row {
 
 /* grid adjustments for blocks */
 .grid16-6 .block-views { width: 355px; }
-.grid16-8 .block-views { width: 465px; }
+.left_lower.grid16-8 .block-views { width: 465px; }
+.right_lower.grid16-8 .block-views { width: 475px; }
 .grid16-10 .block { width: 585px; }
 .grid16-0 { width: 955px; }
 
@@ -71,7 +72,7 @@ a:active {
 	}
 #header-group-inner {
 	position: relative;
-	padding-left: 230px;
+	padding-left: 220px;
 	}
 #header-group-inner-inner {
 	padding: 5px 0;
@@ -94,7 +95,7 @@ h1#site-name a {
 	z-index: 1000;
 	top: 0;
 	left: 0;
-	background-color: #373c30;
+	background-color: #24211e;
 	width: 200px;
 	height: 170px;
 	margin: 0;
@@ -138,7 +139,7 @@ h1#site-name a {
 	}
 #primary-menu.block .inner {
 	float: left;
-	margin-left: 225px;
+	margin-left: 215px;
 	}
 #primary-menu ul.menu {
 	border: 0;
@@ -329,11 +330,32 @@ h1.title {
 
 /* PAGE: Homepage */
 
+/* welcome */
+#block-block-16 {
+	}
+#block-block-16.block .inner {
+	margin: 0;
+	}
+#block-block-16 h2.title {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 300%;
+	line-height: 1em;
+	font-family: Georgia, serif;
+	text-shadow: 1px 1px 0 #fff;
+	}
+#block-block-16 p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 22px;
+	text-shadow: 1px 1px 0 #fff;
+	}
+
 /* featured stories block */
 #block-views-features-block_1 .inner {
 	position: relative;
 	margin: 0;
-	height: 390px;
+	height: 385px;
 }
 #block-views-features-block_1 .views-field-title {
 	position: absolute;
@@ -370,7 +392,7 @@ h1.title {
 	background-color: rgba(0,0,0,.9);
 }
 .views-slideshow-controls-bottom {
-	background-color: #82c332;
+	background-color: #496E1C;
 	height: 26px;
 	padding: 2px 8px;
 }
@@ -504,17 +526,20 @@ div.quicktabs_main {
 
 
 /*//	=FOOTER */
-#footer-wrapper {
-	margin-top: 3em;
+
+#footer-group-wrapper {
+	margin-top: 1em;
 	padding: 2em 0;
 	background: #24211e;
 	border-top: 1px solid #000;
-	}
-#footer {
-	border: 0;
-	background: #24211E;
 	color: #fff;
 	}
+#footer-group-inner .block {
+	margin-bottom: 0;
+	}
+
+
+/* messages */
 .footer-message-wrapper {
 	background: #24211e;
 	}
