@@ -34,7 +34,8 @@ iframe html {
 body#pid-communities #main_content .views-row,
 body#pid-organizations .views-row {
 	background: #fff;
-	margin-right: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
 	border: 1px solid #b0ab9e;
 	box-shadow: 3px 3px 0 #b0ab9e;
 	}
@@ -72,7 +73,7 @@ a:active {
 	}
 #header-group-inner {
 	position: relative;
-	padding-left: 220px;
+	padding-left: 205px;
 	}
 #header-group-inner-inner {
 	padding: 5px 0;
@@ -96,15 +97,15 @@ h1#site-name a {
 	top: 0;
 	left: 0;
 	background-color: #24211e;
-	width: 200px;
-	height: 170px;
+	width: 195px;
+	height: 175px;
 	margin: 0;
 	float: none;
 	}
 #logo a {
 	display: block;
 	text-align: center;
-	padding: 40px;
+	padding: 8px;
 	}
 
 /* nav */
@@ -139,7 +140,7 @@ h1#site-name a {
 	}
 #primary-menu.block .inner {
 	float: left;
-	margin-left: 215px;
+	margin-left: 205px;
 	}
 #primary-menu ul.menu {
 	border: 0;
@@ -280,7 +281,6 @@ h1#site-name a {
 	background: none;
 	}
 #main-inner {
-	padding-top: 50px;
 	}
 
 /* pager */
@@ -298,7 +298,8 @@ ul.pager {
 #breadcrumbs {
 	margin-top: 1em;
 	}
-#breadcrumbs {
+#breadcrumbs-inner .breadcrumb {
+	margin-left: 220px;
 	}
 
 /* editor tabs */
@@ -441,7 +442,7 @@ body#pid-organizations #main-content .block-views {
 body#pid-organizations #content-inner .views-row,
 body#pid-communities #content-inner .views-row {
 	float: left;
-	width: 310px;
+	width: 305px;
 	}
 body#pid-organizations #content-inner .views-row .views-field-title,
 body#pid-communities #content-inner .views-row .views-field-title {
