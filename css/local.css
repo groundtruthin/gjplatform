@@ -415,13 +415,30 @@ h1.title {
 }
 .views-slideshow-controls-bottom .activeSlide a {
 	background-color: #517623;
-}
+	}
 
-/* organizations */
-.view-organizations .views-row {
-	padding: 4px 0;
-	border-bottom: 1px solid #eee;
-}
+/* latest stories */
+.latest-stories {
+	font-size: 11px;
+	}
+.latest-stories h2 {
+	margin-bottom: 5px;
+	}
+.latest-stories ul {
+	margin: 0;
+	}
+.latest-stories ul li {
+	list-style-type: none;
+	border-top: 1px solid #ddd;
+	padding: 3px 0;
+	overflow: hidden;
+	}
+.latest-stories ul li div.views-field-field-image-fid {
+	float: left;
+	margin-right: 10px;
+	padding: 2px;
+	border: 1px solid #ddd;
+	}
 
 /* map */
 #content-region .block .inner {
@@ -545,6 +562,11 @@ div.quicktabs_main {
 	margin-bottom: 0;
 	}
 
+/* organizations */
+.view-organizations .views-row {
+	padding: 4px 0;
+	border-bottom: 1px solid #eee;
+	}
 
 /* messages */
 .footer-message-wrapper {
