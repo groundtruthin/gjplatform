@@ -569,12 +569,17 @@ div.quicktabs_main {
 	color: #fff;
 	}
 #footer-group-inner .block {
-	margin-bottom: 0;
 	}
 #footer-group-inner h2 {
 	margin: 0 0 5px 0;
 	font-size: 18px;
 	text-transform: uppercase;
+	}
+
+/* not yet sure how to get the theme blocks to
+		not inherit the column width */
+#footer_left .block {
+	width: 360px !important;
 	}
 
 /* organizations */
@@ -595,6 +600,11 @@ ul.menu a {
 	display: block;
 	padding: 3px 0;
 	border-bottom: 1px solid #443E39;
+	}
+
+/* ads */
+#footer-group-inner img {
+	margin: 8px 0;
 	}
 
 /* messages */
